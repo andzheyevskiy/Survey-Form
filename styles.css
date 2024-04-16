@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+body{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    text-align: center;
+    margin-top: 30px;
+    width:60%;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+}
+#description{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #ffffff;
+}
+form{
+    background-color: rgba(72, 53, 245, 0.7);
+    color: #ffffff;
+    padding: 30px;
+    display: block;
+    flex-direction: column; 
+    font-size: 20px;
+    text-align: left;
+    margin: 45px 0;
+}
+input,textarea,select{
+    font-size: 15px;
+    width: 97%;
+    margin: 15px 0;
+    text-align: left;
+}
+fieldset input, .checkbox-container input{
+    width: unset;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.checkbox-container{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#submit{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34,0.7);
+}
+.footer a:link{
+    color: #ffffff;
+}.footer a:visited{
+    color: #ffffff;
+}
+.footer a:hover{
+    color: rgba(72, 53, 245);
+}
+.footer a:active{
+    color: rgba(72, 53, 245);
+}
+
+
+/*===========================================================*/
+
+@media only screen and (min-width:576px){
+    .checkbox-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .checkbox-container label{
+        width: 48%;
+    }
+
+
+}
+@media only screen and (min-width:768px){
+
+    .checkbox-container label{
+        width: 33%;
+    }
+
+}
+@media only screen and (min-width:992px){
+
+    .checkbox-container label{
+        width: 24%;
+    }
+}
