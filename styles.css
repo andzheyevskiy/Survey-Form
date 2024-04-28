@@ -62,7 +62,7 @@ body{
 .main-container{
     text-align: center;
     margin-top: 30px;
-    width:60%;
+    width:90%;
 }
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -143,6 +143,14 @@ fieldset input, .checkbox-container input{
     .checkbox-container label{
         width: 48%;
     }
+    .main-container{
+        width: 90%;
+    }
+    #submit{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
 
 }
@@ -151,11 +159,27 @@ fieldset input, .checkbox-container input{
     .checkbox-container label{
         width: 33%;
     }
+    .main-container{
+        width: 70%;
+    }
+    #submit{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 
 }
 @media only screen and (min-width:992px){
 
     .checkbox-container label{
         width: 24%;
+    }
+    .main-container{
+        width: 60%;
+    }
+    #submit{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
